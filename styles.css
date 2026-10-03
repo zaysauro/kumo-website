@@ -171,7 +171,7 @@ body.light-theme .client-product-icon{background:#f0f3ed;color:#71900f}.light-th
 body.light-theme .toast{background:#fff;color:#26384f;border-color:var(--line);box-shadow:0 12px 35px rgba(20,37,65,.14)}
 body.light-theme .orb-b{background:#142541}
 body.light-theme .menu-toggle span{background:#142541}
-body.light-theme body.dark-theme .brand-logo{filter:brightness(0) invert(1)}
+body.dark-theme .brand-logo{filter:brightness(0) invert(1)}
 .brand-logo{width:103px;height:auto;display:block}
 .brand-logo{width:103px;height:auto;display:block}
 .theme-toggle{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 11px;display:inline-flex;align-items:center;gap:7px;font-size:10px;letter-spacing:.04em;cursor:pointer;transition:.25s}
