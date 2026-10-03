@@ -1,3 +1,26 @@
+
+// Theme: light is the official default; dark is an optional night mode.
+const themeToggle = document.querySelector('[data-theme-toggle]');
+const savedTheme = localStorage.getItem('kumo-theme');
+if (savedTheme === 'dark') document.body.classList.remove('light-theme'), document.body.classList.add('dark-theme');
+
+const syncThemeButton = () => {
+  if (!themeToggle) return;
+  const dark = document.body.classList.contains('dark-theme');
+  themeToggle.setAttribute('aria-label', dark ? 'Ativar modo claro' : 'Ativar modo noturno');
+  themeToggle.querySelector('.theme-icon').textContent = dark ? '☀' : '☾';
+  themeToggle.querySelector('.theme-label').textContent = dark ? 'Modo claro' : 'Modo noturno';
+};
+
+themeToggle?.addEventListener('click', () => {
+  const dark = document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('light-theme', !dark);
+  localStorage.setItem('kumo-theme', dark ? 'dark' : 'light');
+  syncThemeButton();
+});
+
+syncThemeButton();
+
 const header = document.querySelector('#header');
 const modal = document.querySelector('[data-client-modal]');
 const toast = document.querySelector('[data-toast]');
