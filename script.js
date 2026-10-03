@@ -32,6 +32,19 @@ menuToggle?.addEventListener('click', () => {
   const open = menuToggle.getAttribute('aria-expanded') === 'true';
   menuToggle.setAttribute('aria-expanded', String(!open));
   nav.classList.toggle('mobile-open', !open);
+  nav.style.display = open ? '' : 'flex';
+  nav.style.position = open ? '' : 'fixed';
+  nav.style.top = open ? '' : '68px';
+  nav.style.left = open ? '' : '14px';
+  nav.style.right = open ? '' : '14px';
+  nav.style.margin = open ? '' : '0';
+  nav.style.padding = open ? '' : '18px';
+  nav.style.flexDirection = open ? '' : 'column';
+  nav.style.gap = open ? '' : '4px';
+  nav.style.background = open ? '' : 'rgba(17,20,24,.97)';
+  nav.style.border = open ? '' : '1px solid rgba(255,255,255,.10)';
+  nav.style.borderRadius = open ? '' : '18px';
+  nav.style.backdropFilter = open ? '' : 'blur(18px)';
 });
 
 nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
