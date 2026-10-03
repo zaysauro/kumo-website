@@ -178,4 +178,4 @@ body.light-theme body.dark-theme .brand-logo{filter:brightness(0) invert(1)}
 .theme-toggle:hover{background:rgba(127,127,127,.08)}
 .theme-icon{font-size:14px;line-height:1}
 @media(max-width:980px){.theme-toggle .theme-label{display:none}.theme-toggle{width:37px;height:37px;justify-content:center;padding:0}}
-@media(max-width:620px){.theme-toggle{display:none}.brand-logo{width:88px}}
+@media(max-width:620px){.theme-toggle{display:inline-flex}.brand-logo{width:78px}}
