@@ -1,7 +1,7 @@
 /* Kumo — interaction layer. No framework required. */
 const PRODUCT_URLS = {
   crm: "https://crm.sistemakumo.com.br",
-  pdv: "https://caixa.sistemakumo.com.br"
+  pdv: "https://meucaixa.sistemakumo.com.br"
 };
 
 const root = document.documentElement;

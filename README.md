@@ -15,7 +15,7 @@ Projeto estático, sem dependências de build. Pode ser publicado diretamente na
 As URLs dos produtos estão centralizadas em `script.js`:
 
 - CRM: https://crm.sistemakumo.com.br
-- Meu Caixa: https://caixa.sistemakumo.com.br
+- Meu Caixa: https://meucaixa.sistemakumo.com.br
 
 Quando os domínios finais estiverem definidos, altere apenas o objeto `PRODUCT_URLS`.
 
