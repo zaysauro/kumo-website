@@ -251,3 +251,22 @@ body.dark-theme .hero-core img,body.dark-theme .about-mark img{filter:brightness
 /* MeuPedido: identidade própria, mantendo os produtos existentes. */
 .pedido-product{grid-column:1/-1;background:#edf2e7!important;display:grid!important;grid-template-columns:1.1fr .9fr;color:#173f34!important;min-height:360px}.pedido-icon{display:inline-grid;place-items:center;background:#173f34!important;color:#faf5e5!important;border-radius:12px;width:48px;height:48px;font-size:32px}.pedido-product h3{display:flex;align-items:center;gap:14px}.pedido-features{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:20px 0}.pedido-features li{padding:5px 10px;border:1px solid #cddbc5;border-radius:20px;font-size:12px}.pedido-links{display:flex;gap:12px;flex-wrap:wrap}.pedido-flow{padding:45px;align-self:center}.pedido-flow>span{font-size:10px;letter-spacing:.13em;color:#6d8268}.pedido-flow>strong{display:block;font-size:30px;line-height:1.25;margin:20px 0;letter-spacing:-1px}.pedido-flow>div{display:flex;gap:10px;align-items:center}.pedido-flow b{padding:12px;background:#fff;border-radius:10px;font-size:12px}.pedido-flow i{font-style:normal;color:#7a9970}@media(max-width:760px){.pedido-product{grid-template-columns:1fr}.pedido-flow{padding:20px 28px 35px}.pedido-flow>strong{font-size:25px}.pedido-links .button{width:100%;justify-content:center}}
 .pedido-product{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.pedido-product>.product-copy,.pedido-flow{min-width:0}.pedido-product .pedido-icon{flex-shrink:0}@media(max-width:760px){.pedido-product{grid-template-columns:minmax(0,1fr)}.pedido-product h3{font-size:34px;gap:10px}.pedido-flow{padding-left:0;padding-right:0}.pedido-flow>div{gap:7px}.pedido-flow b{padding:10px}.pedido-links .button{min-width:0}}
+
+
+/* Unified Kumo product palette and upcoming book product */
+.pedido-product,.sebo-product{background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.pedido-product .pedido-flow{background:linear-gradient(140deg,var(--navy-deep),var(--navy));color:#fff}
+.pedido-product .pedido-icon,.client-icon.pedido-icon{background:var(--surface-soft);color:var(--blue);border:1px solid var(--line)}
+.pedido-product .pedido-features li{background:var(--surface-soft);color:var(--text);border:1px solid var(--line)}
+.sebo-product{display:grid;grid-template-columns:1fr 1fr;min-height:410px}
+.sebo-product .product-copy{padding:clamp(28px,4vw,54px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.sebo-product h3{font:700 clamp(32px,4vw,54px)/1.1 Manrope,sans-serif;letter-spacing:-.045em;margin:16px 0}
+.sebo-product p{max-width:460px;color:var(--muted)}
+.sebo-product .product-cta{margin-top:20px;color:var(--blue)}
+.sebo-art{padding:45px 25px;background:linear-gradient(145deg,#18263f,#4767a3);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:26px}
+.sebo-art strong{font:600 clamp(19px,2.5vw,30px)/1.3 Manrope,sans-serif}
+.sebo-art small{letter-spacing:.2em;font-size:10px;opacity:.75}
+.sebo-books{display:flex;align-items:end;justify-content:center;gap:8px;height:120px}
+.sebo-books span{display:grid;place-items:center;width:34px;height:90px;background:#d4e2fa;color:#253a5c;border-radius:3px 7px 7px 3px;box-shadow:inset 5px 0 #9db9e3,5px 8px 12px #10192c66;font-size:10px}
+.sebo-books span:nth-child(2){height:113px;background:#b3cafa}.sebo-books span:nth-child(3){height:102px;background:#e8effd}.sebo-books span:nth-child(4){height:119px;background:#8db7ff}.sebo-books span:nth-child(5){height:83px}
+@media(max-width:760px){.sebo-product{grid-template-columns:1fr}.sebo-art{min-height:300px}}
