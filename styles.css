@@ -282,3 +282,34 @@ body.dark-theme .hero-core img,body.dark-theme .about-mark img{filter:brightness
 @media(max-width:820px){.pedido-product,.sebo-product{grid-template-columns:minmax(0,1fr)}.pedido-flow,.sebo-art{min-height:290px}.pedido-product>.product-copy,.sebo-product>.product-copy{padding:36px 30px}.product-grid{gap:18px}}
 @media(max-width:560px){.product-card{border-radius:24px}.pedido-product h3,.sebo-product h3{font-size:36px}.pedido-links{width:100%}.pedido-links .button{width:100%;justify-content:center}.pedido-flow>div{gap:6px}.pedido-flow b{padding:9px 10px;font-size:11px}.pedido-flow,.sebo-art{padding:30px 18px}.product-card .product-copy>p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.product-card,.product-window{transition:none!important}.product-card:hover .product-window{transform:none}}
+
+/* Product parity: four equal cards, each with an application preview */
+.product-grid .pedido-product,.product-grid .sebo-product{grid-column:auto;display:block;min-height:700px;padding:38px;background:linear-gradient(155deg,var(--surface),var(--surface-soft))}
+.product-grid .pedido-product>.product-copy,.product-grid .sebo-product>.product-copy{display:block;max-width:420px;padding:0}
+.product-grid .pedido-product h3,.product-grid .sebo-product h3{display:block;font:600 clamp(38px,4vw,56px)/1 Manrope,sans-serif;letter-spacing:-.055em;margin:22px 0 15px}
+.product-grid .pedido-product .product-window,.product-grid .sebo-product .product-window{left:38px;right:38px;bottom:-5px;height:360px}
+.demo-app{display:grid;grid-template-columns:44px minmax(0,1fr);height:calc(100% - 34px);color:var(--text)}
+.demo-sidebar{display:flex;flex-direction:column;align-items:center;gap:17px;padding:14px 8px;border-right:1px solid var(--line);background:var(--surface)}
+.demo-sidebar b{display:grid;place-items:center;width:25px;height:25px;border:1px solid var(--line);border-radius:6px;color:var(--blue);font:700 9px Manrope}
+.demo-sidebar i{width:12px;height:12px;border-radius:3px;background:var(--muted-2);opacity:.5}.demo-sidebar i.active{background:var(--blue);opacity:1}
+.demo-main{min-width:0;padding:17px;overflow:hidden}
+.demo-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font:600 12px Manrope}
+.demo-top small{color:var(--muted);font:400 8px "DM Sans",sans-serif;white-space:nowrap}
+.demo-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:14px}
+.demo-stats>div{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:10px}
+.demo-stats small{display:block;color:var(--muted);font-size:7px}.demo-stats strong{display:block;font:600 16px Manrope;margin-top:3px}
+.demo-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.demo-columns>div{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px}
+.demo-columns header{display:flex;justify-content:space-between;font-size:8px;color:var(--muted);margin-bottom:8px}
+.demo-columns article{border:1px solid var(--line);border-radius:7px;padding:8px;margin-top:6px}
+.demo-columns article strong,.demo-book-list article strong{display:block;font-size:8px}
+.demo-columns article small,.demo-columns article em,.demo-book-list article small{display:block;color:var(--muted);font-size:7px;font-style:normal;margin-top:4px}
+.demo-search{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:8px;margin-top:15px;padding:10px;color:var(--muted);font-size:9px}
+.demo-search span{font-size:8px}.demo-book-list{margin-top:10px}
+.demo-book-list article{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.demo-book-list article>b{font-size:8px}.demo-book-cover{display:grid;place-items:center;width:28px;height:37px;background:#243c65;color:#fff;border-radius:2px 5px 5px 2px;box-shadow:inset 4px 0 #13294b;font:700 13px Manrope}
+.demo-book-cover.cover-blue{background:#7095c5;box-shadow:inset 4px 0 #4767a3}.demo-book-cover.cover-cream{background:#e0d3bb;color:#243c65;box-shadow:inset 4px 0 #b4a488}
+.demo-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:9px;color:var(--muted)}.demo-bottom strong{color:var(--text)}
+@media(max-width:1100px){.product-grid .pedido-product,.product-grid .sebo-product{min-height:650px}}
+@media(max-width:820px){.product-grid .pedido-product,.product-grid .sebo-product{min-height:620px}}
+@media(max-width:560px){.product-grid .pedido-product,.product-grid .sebo-product{padding:25px;min-height:570px}.product-grid .pedido-product .product-window,.product-grid .sebo-product .product-window{left:25px;right:25px;height:300px}.demo-main{padding:10px}.demo-stats>div{padding:7px}.demo-columns article{padding:6px}.demo-columns article:nth-of-type(2){display:none}}
