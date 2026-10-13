@@ -313,3 +313,29 @@ body.dark-theme .hero-core img,body.dark-theme .about-mark img{filter:brightness
 @media(max-width:1100px){.product-grid .pedido-product,.product-grid .sebo-product{min-height:650px}}
 @media(max-width:820px){.product-grid .pedido-product,.product-grid .sebo-product{min-height:620px}}
 @media(max-width:560px){.product-grid .pedido-product,.product-grid .sebo-product{padding:25px;min-height:570px}.product-grid .pedido-product .product-window,.product-grid .sebo-product .product-window{left:25px;right:25px;height:300px}.demo-main{padding:10px}.demo-stats>div{padding:7px}.demo-columns article{padding:6px}.demo-columns article:nth-of-type(2){display:none}}
+
+
+/* Product showcase: self-running, lightweight UI demonstrations */
+@keyframes demoArrive{0%,9%{opacity:.25;transform:translateY(8px)}18%,82%{opacity:1;transform:translateY(0)}93%,100%{opacity:.25;transform:translateY(8px)}}
+@keyframes demoPulse{0%,100%{box-shadow:0 0 0 0 rgba(71,103,163,.05)}50%{box-shadow:0 0 0 5px rgba(71,103,163,.17)}}
+@keyframes demoProgress{0%,12%{width:18%}35%,60%{width:65%}82%,100%{width:100%}}
+@keyframes demoScan{0%,15%{transform:translateY(-8px);opacity:0}28%,68%{opacity:.7}85%,100%{transform:translateY(46px);opacity:0}}
+@keyframes demoHighlight{0%,18%,100%{border-color:var(--line);background:var(--surface-soft)}26%,55%{border-color:var(--blue);background:var(--surface)}}
+.pedido-window .demo-columns article{animation:demoArrive 9s ease-in-out infinite;will-change:opacity,transform}
+.pedido-window .demo-columns>div:first-child article:nth-of-type(2){animation-delay:1.5s}
+.pedido-window .demo-columns>div:last-child article:first-of-type{animation-delay:3s}
+.pedido-window .demo-columns>div:last-child article:nth-of-type(2){animation-delay:4.5s}
+.pedido-window .demo-stats>div:nth-child(2){animation:demoPulse 4s ease-in-out infinite}
+.pedido-window .demo-stats>div:nth-child(3){animation:demoPulse 4s ease-in-out 2s infinite}
+.pedido-window .demo-columns article{position:relative;overflow:hidden}
+.pedido-window .demo-columns article:after{content:"";position:absolute;bottom:0;left:0;height:2px;width:18%;background:var(--blue);animation:demoProgress 9s ease-in-out infinite}
+.pedido-window .demo-columns>div:last-child article:after{animation-delay:2s}
+.sebo-window .demo-book-list article{animation:demoHighlight 9s ease-in-out infinite}
+.sebo-window .demo-book-list article:nth-child(2){animation-delay:3s}
+.sebo-window .demo-book-list article:nth-child(3){animation-delay:6s}
+.sebo-window .demo-search{position:relative;overflow:hidden}
+.sebo-window .demo-search:after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),transparent);animation:demoScan 5s ease-in-out infinite}
+.sebo-window .demo-book-cover{transition:transform .3s ease}
+.sebo-window .demo-book-list article:hover .demo-book-cover{transform:rotate(-7deg) translateY(-2px)}
+.product-grid .pedido-product:hover .demo-app,.product-grid .sebo-product:hover .demo-app{filter:saturate(1.08)}
+@media(prefers-reduced-motion:reduce){.pedido-window .demo-columns article,.pedido-window .demo-stats>div,.pedido-window .demo-columns article:after,.sebo-window .demo-book-list article,.sebo-window .demo-search:after{animation:none!important}.sebo-window .demo-book-list article:hover .demo-book-cover{transform:none}}
