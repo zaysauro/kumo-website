@@ -339,3 +339,28 @@ body.dark-theme .hero-core img,body.dark-theme .about-mark img{filter:brightness
 .sebo-window .demo-book-list article:hover .demo-book-cover{transform:rotate(-7deg) translateY(-2px)}
 .product-grid .pedido-product:hover .demo-app,.product-grid .sebo-product:hover .demo-app{filter:saturate(1.08)}
 @media(prefers-reduced-motion:reduce){.pedido-window .demo-columns article,.pedido-window .demo-stats>div,.pedido-window .demo-columns article:after,.sebo-window .demo-book-list article,.sebo-window .demo-search:after{animation:none!important}.sebo-window .demo-book-list article:hover .demo-book-cover{transform:none}}
+
+
+/* Kumo 2026 — graphite and deep green identity */
+:root{
+  --navy:#102e27;--navy-deep:#07120f;--blue:#226c51;
+  --accent:#8bd5a8;--accent-strong:#48ba80;
+}
+body.dark-theme{
+  --bg:#080d0b;--surface:#121b17;--surface-soft:#19251e;
+  --text:#f2f6f2;--muted:#afbeb4;--muted-2:#84998b;
+  --line:rgba(172,215,184,.13);--line-strong:rgba(172,215,184,.28);
+  --shadow-sm:0 12px 32px rgba(0,0,0,.24);
+  --shadow-lg:0 32px 90px rgba(0,0,0,.45);
+}
+body.dark-theme .product-card{
+  background:linear-gradient(155deg,#192820 0%,#101813 62%,#0b130f 100%);
+  border-color:rgba(150,214,168,.18);
+  box-shadow:0 20px 60px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.035);
+}
+body.dark-theme .product-card:hover{
+  border-color:rgba(126,220,155,.5);
+  box-shadow:0 30px 75px rgba(0,0,0,.4),0 0 0 1px rgba(115,211,145,.12);
+}
+body.dark-theme .product-card:focus-within{border-color:var(--accent-strong)}
+@media(prefers-reduced-motion:reduce){.product-card{transform:none!important}}
