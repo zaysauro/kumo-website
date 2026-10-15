@@ -15,11 +15,11 @@ const modalPanel = modal?.querySelector(".modal-panel");
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/* Theme — graphite/dark is the official Kumo default; preserve user preference. */
+/* Institutional blue identity: light is default; preserve explicit dark preference. */
 const savedTheme = localStorage.getItem("kumo-theme");
-if (savedTheme === "light") {
-  body.classList.remove("dark-theme");
-  body.classList.add("light-theme");
+if (savedTheme === "dark") {
+  body.classList.remove("light-theme");
+  body.classList.add("dark-theme");
 }
 
 function syncThemeButton() {
