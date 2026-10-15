@@ -1,0 +1,24 @@
+/* Kumo institutional brand — isolated from MeuPedido */
+:root{
+--navy:#1E3A5F;--navy-deep:#0F2440;--blue:#2B5C8A;
+--accent:#D5E5F4;--accent-strong:#2B5C8A;
+--bg:#FFFFFF;--surface:#FFFFFF;--surface-soft:#EEF3F8;
+--text:#0F2440;--muted:#3D4A5C;--muted-2:#52647A;
+--line:rgba(30,58,95,.10);--line-strong:rgba(30,58,95,.20);
+--shadow-sm:0 1px 2px rgba(15,36,64,.06),0 4px 12px rgba(15,36,64,.08),0 12px 32px rgba(15,36,64,.10);
+--shadow-lg:0 4px 12px rgba(15,36,64,.10),0 16px 38px rgba(15,36,64,.15);
+}
+body.dark-theme{
+--navy:#1E3A5F;--navy-deep:#0F2440;--blue:#9DC7EC;
+--accent:#D5E5F4;--accent-strong:#A9D4F5;
+--bg:#0F2440;--surface:#182F4C;--surface-soft:#1E3A5F;
+--text:#FFFFFF;--muted:#D4E2EF;--muted-2:#BED2E5;
+--line:rgba(220,234,247,.15);--line-strong:rgba(220,234,247,.28);
+--shadow-sm:0 1px 2px rgba(0,0,0,.10),0 4px 12px rgba(0,0,0,.14),0 12px 32px rgba(0,0,0,.18);
+--shadow-lg:0 4px 12px rgba(0,0,0,.20),0 16px 38px rgba(0,0,0,.26);
+}
+.product-card{border:1px solid var(--line)!important;border-radius:16px!important;background:var(--surface)!important;box-shadow:var(--shadow-sm)!important;transition:transform 280ms ease-out,box-shadow 280ms ease-out,background 280ms ease-out,color 280ms ease-out}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)!important;border-color:var(--line-strong)!important}
+.product-card:focus-within{outline:3px solid var(--accent-strong);outline-offset:3px}
+:focus-visible{outline:3px solid var(--accent-strong);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.product-card{transform:none!important;transition:none!important}}
