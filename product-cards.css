@@ -29,3 +29,15 @@
  .product-grid .product-card,.product-grid .product-card *,.product-grid .product-card *:before,.product-grid .product-card *:after{animation:none!important;transition:none!important}
  .product-grid .product-card:hover{transform:none!important}
 }
+
+/* Editorial spacing and product-specific preview, within the Kumo blue system. */
+.product-grid{gap:28px}
+.product-grid .product-copy{padding:28px 12px 12px}
+.product-grid .product-card h3{letter-spacing:-.04em;margin:17px 0 14px}
+.product-grid .product-label{letter-spacing:.09em;text-transform:uppercase;font-size:10px}
+.product-grid .product-card p{line-height:1.8}
+.product-grid .product-cta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:26px;padding-top:18px}
+.product-grid .pedido-window{--surface:#16231a;--surface-soft:#1e3425;--text:#ecebdc;--muted:#bbc9ae;--muted-2:#93a582;--blue:#b5c99d;--line:#3b503a;--line-strong:#52684a;background:var(--surface);color:var(--text)}
+.product-grid .pedido-window .window-chrome{color:#d3dfc4}
+.product-grid .pedido-window .window-chrome small{color:#b9c9ab}
+@media(max-width:760px){.product-grid{gap:22px}.product-grid .product-copy{padding:23px 9px 9px}}
