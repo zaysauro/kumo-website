@@ -18,7 +18,7 @@ Conhecimento permanente para evoluir a apresentação visual dos produtos Kumo.
 
 | Produto | Auditoria | Direção visual | Redesign | Publicado |
 |---|---|---|---|---|
-| Kumo (institucional) | ✅ 08/11/2026 | — | — | — |
+| Kumo (institucional) | ✅ 08/11/2026 | ✅ [Nuvem e Sol](products/kumo-institucional.md) | 🔄 branch `redesign/home` | — |
 | Kumo Sites | — | — | — | — |
 | Kumo CRM | — | — | — | — |
 | Meu Caixa | — | — | — | — |
