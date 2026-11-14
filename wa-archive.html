@@ -1,0 +1,72 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="WA Archive: extensão para Chrome que arquiva e analisa conversas do WhatsApp Web no seu navegador, sem enviar nada para servidor. Baixe o código do projeto."><title>WA Archive | Kumo</title><link rel="icon" href="/kumo-logo.svg" type="image/svg+xml"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"><link rel="stylesheet" href="/styles.css"><style>.prod-hero{padding:190px 0 60px}.prod-hero .display{max-width:930px}.prod-lead{max-width:650px;color:var(--muted);font-size:18px;line-height:1.7}.prod-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.prod-section{padding:70px 0;border-top:1px solid var(--line)}.prod-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.prod-section h2{font:700 30px Manrope,sans-serif;letter-spacing:-.04em;margin:0 0 14px}.prod-section p{color:var(--muted);line-height:1.75;max-width:680px;margin:0 0 14px}.prod-list{list-style:none;padding:0;margin:0}.prod-list li{padding:16px 0;border-bottom:1px solid var(--line);line-height:1.6}.prod-list li strong{display:block;margin-bottom:4px}.prod-steps{counter-reset:step;padding:0;margin:0;list-style:none}.prod-steps li{counter-increment:step;padding:14px 0 14px 44px;position:relative;border-bottom:1px solid var(--line);line-height:1.6;color:var(--muted)}.prod-steps li::before{content:counter(step);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;font:700 13px Manrope,sans-serif;color:var(--text)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;background:var(--surface-soft);padding:2px 6px;border-radius:6px;color:var(--text)}.prod-back{display:inline-block;margin-top:10px;font-weight:700;color:var(--text);border-bottom:1px solid currentColor;padding-bottom:4px}a:focus-visible{outline:3px solid #5378c7;outline-offset:4px}@media(max-width:760px){.prod-hero{padding-top:145px}.prod-grid{grid-template-columns:1fr;gap:20px}.prod-section{padding:50px 0}}</style></head><body class="light-theme"><div class="grain" aria-hidden="true"></div><header class="site-header scrolled" id="header"><div class="header-inner"><a class="brand" href="/" aria-label="Voltar para Kumo"><img src="/kumo-logo.svg" alt="Kumo"></a><nav class="desktop-nav" id="main-nav" aria-label="Navegação"><a href="/">Início</a><a href="/#produtos">Produtos</a><a href="/sites.html">Criação de Sites</a><a href="/projetos" aria-current="page">Projetos</a><a href="/jogos">Jogos</a></nav><div class="header-actions"><button class="theme-toggle" data-theme-toggle type="button"><span class="theme-icon"></span><span class="theme-label">Modo noturno</span></button><a class="header-cta" href="/#contato">Contato ↗</a><button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button></div></div></header><main id="conteudo">
+
+<section class="container prod-hero">
+  <p class="section-index">Projetos independentes / Extensão para Chrome</p>
+  <h1 class="display">WA Archive <em>no seu navegador.</em></h1>
+  <p class="prod-lead">Extensão para Chrome que arquiva e analisa conversas do WhatsApp Web. Tudo fica no seu computador: não há servidor, conta nem envio de conversas.</p>
+  <div class="prod-actions">
+    <a class="button button-primary" href="https://github.com/zaysauro/wa-archive/archive/refs/heads/main.zip" download><span>Baixar código (.zip)</span></a>
+    <a class="button button-secondary" href="https://github.com/zaysauro/wa-archive" target="_blank" rel="noopener noreferrer"><span>Ver o repositório ↗</span></a>
+  </div>
+</section>
+
+<section class="container prod-section">
+  <div class="prod-grid">
+    <h2>O que faz</h2>
+    <div>
+      <p>O WA Archive guarda o histórico das suas conversas do WhatsApp Web no banco de dados do próprio navegador e mostra um painel com análises de quem fala, quando fala e em que períodos a conversa é mais intensa.</p>
+      <p>Você também pode importar conversas já exportadas pelo próprio WhatsApp, em TXT ou ZIP, sem precisar de conexão com a internet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container prod-section">
+  <div class="prod-grid">
+    <h2>Para quem é</h2>
+    <div>
+      <p>Para quem quer manter um arquivo pessoal de conversas do WhatsApp e entender os próprios padrões de comunicação, sem depender de um serviço em nuvem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container prod-section">
+  <div class="prod-grid">
+    <h2>Recursos</h2>
+    <ul class="prod-list">
+      <li><strong>Captura do WhatsApp Web</strong>Registra as mensagens renderizadas na página enquanto você as lê.</li>
+      <li><strong>Importação de exportações oficiais</strong>Lê arquivos TXT e ZIP exportados pelo WhatsApp. Mídias são ignoradas.</li>
+      <li><strong>Sem duplicatas</strong>Mensagens repetidas entre importações e capturas são identificadas e não entram duas vezes.</li>
+      <li><strong>Sessões de conversa</strong>Mensagens são agrupadas em sessões separadas por pausas de 4 horas.</li>
+      <li><strong>Painel de análises</strong>Resumo da conversa e mapa de calor com os dias da semana e horários de maior atividade.</li>
+      <li><strong>Exportação em JSON</strong>Exporte o arquivo com as suas mensagens quando quiser.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container prod-section">
+  <div class="prod-grid">
+    <h2>Privacidade</h2>
+    <div>
+      <p>Não há backend, envio de conversas, telemetria nem analytics externo. Mensagens, arquivos importados e o banco de dados (IndexedDB) ficam no seu navegador.</p>
+      <p>A extensão só atua em <code>web.whatsapp.com</code>. Projeto independente, não afiliado ao WhatsApp ou à Meta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container prod-section">
+  <div class="prod-grid">
+    <h2>Como instalar</h2>
+    <div>
+      <p>Ainda não há versão compilada para download. Para instalar, é preciso gerar a extensão a partir do código, com Node.js e npm instalados.</p>
+      <ol class="prod-steps">
+        <li>Baixe o arquivo .zip e descompacte-o.</li>
+        <li>Na pasta do projeto, rode <code>npm install</code> e depois <code>npm run build</code>.</li>
+        <li>Abra <code>chrome://extensions</code>, ative o modo do desenvolvedor e clique em “Carregar sem compactação”.</li>
+        <li>Selecione a pasta <code>dist</code> gerada no passo anterior.</li>
+      </ol>
+      <a class="prod-back" href="https://github.com/zaysauro/wa-archive" target="_blank" rel="noopener noreferrer">Ver instruções completas no GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+</main><footer class="site-footer"><div class="container footer-bottom"><span>© 2026 Kumo — Soluções em Tecnologia</span><a href="/projetos">Voltar para Projetos ↗</a></div></footer><script src="/script.js" defer></script></body></html>
